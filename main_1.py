@@ -1,5 +1,4 @@
 from DLNN_1 import dataframe
-# from MLNN import svc
 import MLNN
 from SVC_1 import svc
 from LSTM import lstm_df
@@ -99,7 +98,8 @@ def main(ticker=None):
 
     print(80*'-')
     print(f"Long Short Term Memory")
-    print(f"**Waiting on Andrews Description**.")
+    print(f"Taking previous candles, adjusting weightes accordingly to")
+    print(f"match trade signals, and predicting the next candle.")
     print(f"RMSE: {lstm_RMSE}")
     # print(svc_conf_matrix, svc_class_report)
 
