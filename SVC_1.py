@@ -55,7 +55,7 @@ def svc(df):
     X = df.drop(columns=['Trade Signal'])
     # y = df["Trade Signal"]
 
-    model = SVC(kernel='linear')
+    model = SVC(kernel='sigmoid')
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
     # print(X.tail())
